@@ -9,6 +9,7 @@ Autoconfig: https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autocon
 <b>Issues</b>
 
 Nginx as the webserver for autodiscover doesn't allow POSTs to static content. needs a hack in the vhost:
+
 location /autodiscover {
 error_page 405 =200 $uri;
 }
